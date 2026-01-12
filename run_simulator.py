@@ -19,6 +19,7 @@ argParser.add_argument("-ti", "--trace_instr", help="Path to dump instruction-tr
 argParser.add_argument("-gdb", "--debug", action="store_true", help="Run in ETISS-debug mode")
 argParser.add_argument("-tgdb", "--target_debug", help="Run in target-SW-debug mode with specified debuger (<YOUR_PATH>/bin/riscv<32|64>-unknown-elf-gdb)")
 argParser.add_argument("-p", "--profile", action="store_true", help="Run in profile mode (valgrind)")
+argParser.add_argument("-i", "--extra-ini", default=None, help="TODO")
 args = argParser.parse_args()
 
 # Check input arguments
@@ -93,6 +94,8 @@ vp_args = " -i" + simDir + "/ini/common.ini"
 vp_args += " -i" + simDir + "/ini/" + args.core + ".ini"
 vp_args += " -i" + str(dynIni)
 vp_args += " -i" + str(pluginIni)
+if args.extra_ini:
+    vp_args += f" -i{args.extra_ini}"
 run_sim = vp_exe + vp_args
 
 # Run simulation
