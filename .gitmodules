@@ -1,8 +1,8 @@
 [submodule "etiss"]
 	path = etiss
-	url = git@github.com:danielschloms/etiss.git
-	branch = daniel-dev
+	url = git@github.com:PhilippvK/etiss.git
+	branch = daniel-dev-pvk
 [submodule "etiss_plugins/SoftwareEvalLib"]
 	path = etiss_plugins/SoftwareEvalLib
-	url = git@github.com:danielschloms/SoftwareEvalLib.git
-	branch = daniel-dev
+	url = git@github.com:tum-ei-eda/SoftwareEvalLib.git
+	branch = daniel-dev-pvk
