@@ -1,6 +1,6 @@
 [submodule "etiss"]
 	path = etiss
-	url = git@github.com:wysiwyng/etiss.git
+	url = git@github.com:tum-ei-eda/etiss.git
 [submodule "etiss_plugins/SoftwareEvalLib"]
 	path = etiss_plugins/SoftwareEvalLib
 	url = git@github.com:tum-ei-eda/SoftwareEvalLib.git
